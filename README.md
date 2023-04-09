@@ -4,6 +4,8 @@
 
 
 ## Screenshots
+<img width="418" alt="Screenshot 2023-04-09 at 10 56 17 AM" src="https://user-images.githubusercontent.com/82700832/230751732-84658701-4f87-4ef1-a5eb-bf641d2d493d.png">
+
 
 
 ## Key Features
@@ -48,15 +50,10 @@ flutter test
 
 
 ## Setup Project
-- Clone repository
-```bash
-git clone https://github.com/weeyc/to-do-list.git  
-```
-
 - To run the app, simply write
 ```bash
 flutter pub get  
 ```
 ```bash
-flutter run 
+flutter run --no-sound-null-safety
 ```
