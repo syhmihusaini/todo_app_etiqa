@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:todo_app_etiqa/page/home_page.dart';
-import 'package:todo_app_etiqa/provider/todos.dart';
+import 'package:to_do_list/pre_cache.dart';
 
-void main() => runApp(MyApp());
+import 'app.dart';
+import 'data/local_storage/shared_preferences.dart';
+import 'error.dart';
 
-class MyApp extends StatelessWidget {
-  static final String title = 'To-Do List';
-
-  @override
-  Widget build(BuildContext context) => ChangeNotifierProvider(
-        create: (context) => TodosProvider(),
-        child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            primarySwatch: Colors.orange,
-            scaffoldBackgroundColor: Color(0xFFf6f5ee),
-          ),
-          home: HomePage(),
-        ),
-      );
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // init shared preferences local storage
+  await UserSharedPreferences.init();
+  // pre cache all svg assets
+  await PreCacheAssets.preLoadAllSvg();
+  ErrorHandler.catchAll(() {
+    runApp(const App());
+  });
 }
