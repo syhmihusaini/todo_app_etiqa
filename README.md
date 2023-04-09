@@ -4,8 +4,8 @@
 
 
 ## Screenshots
+![Alt text](https://user-images.githubusercontent.com/82700832/230751640-4c0f830b-62fb-4ec8-91cb-d149a1884f40.png)
 
-![Alt text](https://user-images.githubusercontent.com/82700832/230751577-b37b4948-dbf6-49a0-bee4-
 
 ## Key Features
  - Create To-Do
