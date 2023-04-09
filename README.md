@@ -4,7 +4,8 @@
 
 
 ## Screenshots
-![Alt text](https://user-images.githubusercontent.com/82700832/230751640-4c0f830b-62fb-4ec8-91cb-d149a1884f40.png)
+<img width="418" alt="Screenshot 2023-04-09 at 10 56 17 AM" src="https://user-images.githubusercontent.com/82700832/230751732-84658701-4f87-4ef1-a5eb-bf641d2d493d.png">
+
 
 
 ## Key Features
