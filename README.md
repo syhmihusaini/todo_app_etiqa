@@ -50,15 +50,10 @@ flutter test
 
 
 ## Setup Project
-- Clone repository
-```bash
-git clone https://github.com/weeyc/to-do-list.git  
-```
-
 - To run the app, simply write
 ```bash
 flutter pub get  
 ```
 ```bash
-flutter run 
+flutter run --no-sound-null-safety
 ```
