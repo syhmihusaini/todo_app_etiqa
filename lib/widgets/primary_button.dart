@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/color_util.dart';
+
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
     Key? key,
@@ -17,7 +19,7 @@ class PrimaryButton extends StatelessWidget {
       child: Container(
         height: 65,
         width: double.infinity,
-        color: Colors.black,
+        color: ColorUtil.theme,
         alignment: Alignment.center,
         child: Text(label, style: const TextStyle(color: Colors.white, fontSize: 20)),
       ),

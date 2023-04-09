@@ -4,7 +4,7 @@ import 'package:to_do_list/data/local_storage/shared_preferences.dart';
 import 'package:to_do_list/data/models/todo_model.dart';
 
 class ToDoListController extends GetxController {
-  List<ToDoModel> toDoList = <ToDoModel>[].obs;
+  List<ToDoModel> toDoList = <ToDoModel>[];
 
   @override
   void onInit() {
@@ -23,7 +23,7 @@ class ToDoListController extends GetxController {
     super.onClose();
   }
 
-  // delete to-do when on long press
+  // delete to-do when slide to the left
   void deleteToDo(String id) {
     Get.dialog(
       AlertDialog(
