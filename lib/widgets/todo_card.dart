@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/current_remaining_time.dart';
 import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
+import 'package:to_do_list/modules/to_do_list/controllers/todo_list_controller.dart';
 import 'package:to_do_list/utils/color_util.dart';
 import 'package:to_do_list/utils/date_util.dart';
+
+import 'notification.dart';
 
 class ToDoCard extends StatelessWidget {
   const ToDoCard({
@@ -196,6 +199,7 @@ class ToDoTime extends StatelessWidget {
                   ? '${time?.sec} sec'
                   : '';
               if (time == null) {
+                NotificationService().showNotification(title: 'Reminder', body: 'Your tasks is already timeout.');
                 return const Text('-');
               }
               return Text(
