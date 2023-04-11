@@ -52,8 +52,12 @@ flutter test
 ## Setup Project
 - To run the app, simply write
 ```bash
-flutter pub get  
+install flutter
+1.https://docs.flutter.dev/get-started/install
 ```
 ```bash
-flutter run --no-sound-null-safety
+2.flutter pub get  
+```
+```bash
+3.flutter run --no-sound-null-safety
 ```
