@@ -199,7 +199,7 @@ class ToDoTime extends StatelessWidget {
                   ? '${time?.sec} sec'
                   : '';
               if (time == null) {
-                NotificationService().showNotification(title: 'Reminder', body: 'Your tasks is already timeout.');
+                //return NotificationService().showNotification(title: 'Reminder', body: 'Your tasks is already timeout.');
                 return const Text('-');
               }
               return Text(
